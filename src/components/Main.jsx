@@ -2,7 +2,8 @@ import { useChangeElements } from '../hooks/changeElements'
 
 export function Main () {
 
-    const { handleButtonNo, handleButtonYes, textP, image, playSong } = useChangeElements()
+    //const { handleButtonNo, handleButtonYes, textP, image, playSong } = useChangeElements()
+    const { handleButtonNo, handleButtonYes, textP, image } = useChangeElements()
 
     return (
         <>
@@ -16,12 +17,6 @@ export function Main () {
                     <img src={image} className='w-72'/>
 
                     <p className='font-mono text-yellow-100'> {textP} </p>
-
-                    {playSong && (
-                        <audio autoPlay>
-                            <source src="te_esperaba.mp3" type="audio/mp3" />
-                        </audio>
-                    )}
 
                     <section className='flex gap-3'>
 
